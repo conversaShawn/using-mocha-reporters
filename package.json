@@ -1,0 +1,24 @@
+{
+  "name": "using-mocha-reporters",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "merge": "npx cypress run mochawesome-merge cypress/reports/html/json/*.json > cypress/reports/output.json"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/conversaShawn/using-mocha-reporters.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/conversaShawn/using-mocha-reporters/issues"
+  },
+  "homepage": "https://github.com/conversaShawn/using-mocha-reporters#readme",
+  "devDependencies": {
+    "cypress-mochawesome-reporter": "^2.3.0",
+    "mochawesome-merge": "^4.2.0"
+  }
+}
