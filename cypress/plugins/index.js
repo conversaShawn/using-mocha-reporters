@@ -17,16 +17,19 @@
  */
 // eslint-disable-next-line no-unused-vars
 
-const { beforeRunHook, afterRunHook } = require('cypress-mochawesome-reporter/lib');
+// const { beforeRunHook, afterRunHook } = require('cypress-mochawesome-reporter/lib');
 
-module.exports = (on) => {
-  on('before:run', async (details) => {
-    console.log('override before:run');
-    await beforeRunHook(details);
-  });
+// module.exports = (on) => {
+//   on('before:run', async (details) => {
+//     console.log('override before:run');
+//     await beforeRunHook(details);
+//   });
 
-  on('after:run', async () => {
-    console.log('override after:run');
-    await afterRunHook();
-  });
-};
+//   on('after:run', async () => {
+//     console.log('override after:run');
+//     await afterRunHook();
+//   });
+// };
+module.exports = (on, config) => {
+  // configure plugins here
+}

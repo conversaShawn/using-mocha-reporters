@@ -1,10 +1,12 @@
 {
     "reporter": "cypress-mochawesome-reporter",
     "reporterOptions": {
-        "overwrite": true,
+        "charts": false,
+        "overwrite": false,
         "html": false,
         "json": true,
         "reportDir": "cypress/reports",
-        "TAP": true
+        "reportFilename": "report",
+        "tap": true
     }
 }
